@@ -1,0 +1,22 @@
+def exercise1(tp, fp, fn):
+    if not isinstance(tp,int):
+        print("tp must be int")
+        return 
+    elif not isinstance(fp,int):
+        print("fp must be int")
+        return
+    elif not isinstance(fn,int):
+        print("fn must be int")
+        return 
+    elif tp <= 0 or fp <= 0 or fn <= 0:
+        print("tp and fp and fn must be greater than zero")
+        return
+    else:
+        precision = tp / (tp + fp)
+        recall = tp / (tp + fn)
+        f1_score = 2 * (precision*recall)/(precision + recall)
+        print(f"Precision = {precision} \n Recall = {recall} \n F1_score = {f1_score}")
+
+if __name__ == "__main__":
+    exercise1(2,3,4)
+    exercise1('a',3,4)
