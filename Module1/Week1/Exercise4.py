@@ -21,19 +21,19 @@ def cal_sin(x,n):
 def cal_cos(x,n):
     result = 0
     for i in range(n):
-        result += (-1)**n*x**(2*n)/giaithua[2*n]
+        result += (-1)**n*x**(2*i)/giaithua[2*i]
     return result
 
 def cal_sinh(x,n):
     result = 0
     for i in range(n):
-        result += x**(2*n+1)/giaithua[2*i+1]
+        result += x**(2*i+1)/giaithua[2*i+1]
     return result
 
 def cal_cosh(x,n):
     result = 0
     for i in range(n):
-        result += x**(2*n)/giaithua[2*n]
+        result += x**(2*i)/giaithua[2*i]
     return result
 
 def exercise4():

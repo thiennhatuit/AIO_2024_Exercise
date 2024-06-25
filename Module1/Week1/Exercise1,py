@@ -18,5 +18,5 @@ def exercise1(tp, fp, fn):
         print(f"Precision = {precision} \n Recall = {recall} \n F1_score = {f1_score}")
 
 if __name__ == "__main__":
-    exercise1(2,3,4)
-    exercise1('a',3,4)
+    # exercise1(2,3,4)
+    exercise1(2,4,5)
